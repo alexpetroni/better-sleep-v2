@@ -1,1 +1,0 @@
-import{b as o,h as i,a as c,E as b,e as d,H as E,i as T,j as p,k as _}from"./CR_-tMti.js";import{B as y}from"./aCSjPB9x.js";function m(t,f,h=!1){i&&c();var e=new y(t),u=h?b:0;function n(a,r){if(i){const l=d(t)===E;if(a===l){var s=T();p(s),e.anchor=s,_(!1),e.ensure(a,r),_(!0);return}}e.ensure(a,r)}o(()=>{var a=!1;f((r,s=!0)=>{a=!0,n(s,r)}),a||n(!1,null)},u)}export{m as i};
