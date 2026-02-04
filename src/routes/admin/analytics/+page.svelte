@@ -89,7 +89,7 @@
 								<div
 									class="absolute bottom-0 w-full rounded-t bg-primary"
 									style="height: {(day.completed / day.sessions) * 100}%"
-								/>
+								></div>
 							</div>
 						</div>
 						<span class="text-xs text-muted-foreground">{day.day}</span>
@@ -98,11 +98,11 @@
 			</div>
 			<div class="mt-4 flex items-center justify-center gap-6 text-sm">
 				<div class="flex items-center gap-2">
-					<div class="h-3 w-3 rounded bg-primary/20" />
+					<div class="h-3 w-3 rounded bg-primary/20"></div>
 					<span>Started</span>
 				</div>
 				<div class="flex items-center gap-2">
-					<div class="h-3 w-3 rounded bg-primary" />
+					<div class="h-3 w-3 rounded bg-primary"></div>
 					<span>Completed</span>
 				</div>
 			</div>
@@ -163,7 +163,7 @@
 							<div
 								class="h-full rounded-full bg-primary"
 								style="width: {flag.percentage}%"
-							/>
+							></div>
 						</div>
 					</div>
 					<div class="w-20 text-right text-sm">

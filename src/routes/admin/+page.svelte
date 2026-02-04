@@ -100,7 +100,7 @@
 							<div
 								class="h-full rounded-full bg-primary"
 								style="width: {category.percentage}%"
-							/>
+							></div>
 						</div>
 					</div>
 				{/each}

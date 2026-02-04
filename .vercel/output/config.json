@@ -1,0 +1,63 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/?(?:/__data.json)?$",
+			"dest": "/"
+		},
+		{
+			"src": "^/admin/?(?:/__data.json)?$",
+			"dest": "/admin"
+		},
+		{
+			"src": "^/admin/analytics/?(?:/__data.json)?$",
+			"dest": "/admin/analytics"
+		},
+		{
+			"src": "^/admin/questions/?(?:/__data.json)?$",
+			"dest": "/admin/questions"
+		},
+		{
+			"src": "^/admin/sessions/?(?:/__data.json)?$",
+			"dest": "/admin/sessions"
+		},
+		{
+			"src": "^/api/cron/emails/?(?:/__data.json)?$",
+			"dest": "/api/cron/emails"
+		},
+		{
+			"src": "^/api/quiz/sessions/?(?:/__data.json)?$",
+			"dest": "/api/quiz/sessions"
+		},
+		{
+			"src": "^/api/quiz/sessions/([^/]+?)/?(?:/__data.json)?$",
+			"dest": "/api/quiz/sessions/[sessionId]"
+		},
+		{
+			"src": "^/api/quiz/sessions/([^/]+?)/responses/?(?:/__data.json)?$",
+			"dest": "/api/quiz/sessions/[sessionId]/responses"
+		},
+		{
+			"src": "^/api/quiz/sessions/([^/]+?)/results/?(?:/__data.json)?$",
+			"dest": "/api/quiz/sessions/[sessionId]/results"
+		},
+		{
+			"src": "^/quiz/?(?:/__data.json)?$",
+			"dest": "/quiz"
+		},
+		{
+			"src": "/.*",
+			"dest": "/![-]/catchall"
+		}
+	],
+	"overrides": {}
+}
